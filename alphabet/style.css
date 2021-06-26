@@ -1,3 +1,37 @@
-.gread {
-    border: 2px solid black;
+.btn-group button {
+    border: 1px solid black;
+    /* black border */
+    color: black;
+    /* black text */
+    padding: 10px 24px;
+    /* Some padding */
+    cursor: pointer;
+    /* Pointer/hand icon */
+    float: left;
+    /* Float the buttons side by side */
+}
+
+
+/* Clear floats (clearfix hack) */
+
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none;
+    /* Prevent double borders */
+}
+
+
+/* Add a background color on hover */
+
+.btn-group button:hover {
+    background-color: #4d3e8e;
+}
+
+.btn-grup-vert {
+    display: block;
 }
